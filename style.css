@@ -1,0 +1,351 @@
+@keyframes ex {
+    form {
+        background-color: blue
+    }
+
+    to {
+        background-color: green
+    }
+}
+
+#div1 {
+    width: 200px;
+    height: 100px;
+    animation-name: ex;
+    animation-duration: 5s;
+
+}
+
+@keyframes ez {
+    0% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: red;
+    }
+
+}
+
+#div2 {
+    width: 200px;
+    height: 100px;
+    animation-name: ez;
+    animation-duration: 5s;
+}
+
+@keyframes ec {
+    from {
+        filter: opacity(1);
+    }
+
+    to {
+        filter: opacity(0);
+    }
+}
+
+#poto {
+    animation-name: ec;
+    animation-duration: 5s;
+}
+
+@keyframes imd {
+    from {
+        filter: brightness(100%);
+    }
+
+    to {
+        filter: brightness(500%);
+    }
+}
+
+#poto2 {
+    animation-duration: 5s;
+    animation-name: imd;
+}
+
+/* רו אפקט של תמונה מתיישנת */
+#poto3 {
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes z {
+    from {
+        filter: grayscale(0%);
+
+    }
+
+    to {
+        filter: grayscale(100%);
+    }
+}
+
+#poto3 {
+    animation-name: z;
+    animation-duration: 5s;
+}
+
+/* צרו דיב שמחליף צבע רקע, מכתום לורוד וזז משמאל לימין ובחזרה	 */
+#div3 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: relative;
+}
+
+@keyframes x {
+
+    0% {
+        background: orange;
+        left: 0px;
+    }
+
+    100% {
+        background: pink;
+        left: 200px;
+    }
+
+}
+
+#div3 {
+    animation: x 2s infinite alternate;
+}
+
+/* צרו דיב שמחליף צבע רקע, מאדום לירוק, צהוב ומסתיים בתכלת וזז מלמעלה למטה ובחזרה */
+@keyframes f {
+
+    0% {
+        background: red;
+        bottom: 0px;
+    }
+
+    100% {
+        background: yellow;
+        bottom: 100px;
+    }
+
+}
+
+#div4 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    animation: f 2s infinite alternate;
+    position: relative;
+}
+
+/* צרו תמונה שמשנה את הצל שלה משחור חד לצל צהוב מטושטש ובחזרה	 */
+@keyframes o {
+    from {
+        filter: drop-shadow(5px 9px 2px black);
+
+    }
+
+    to {
+        filter: drop-shadow(10px 10px 7px yellow);
+    }
+}
+
+#div5 {
+
+    animation: o 5s infinite alternate;
+}
+
+#poto4 {
+    height: 100px;
+    width: 100px;
+}
+
+/* צרו תמונה שמעלה את הטשוש של התמונה ובחזרה */
+@keyframes t {
+    from {
+        filter: blur(10px);
+
+    }
+
+    to {
+        filter: blur(0px);
+    }
+}
+
+#div6 {
+    animation: t 5s infinite alternate;
+    position: relative;
+}
+
+/* צרו אפקט של צל מטושטש שמחליף צבעים, חדות התמונה מתחזקת, גודל האלמנט גדל והאנימציה מתרחשת רק בריחוף על האלמנט */
+@keyframes a {
+    from {
+        filter: blur(10px) drop-shadow(5px 9px 2px black);
+        width: 150px;
+        height: 150px;
+    }
+
+    to {
+        filter: blur(0px) drop-shadow(10px 10px 7px yellow);
+        width: 200px;
+        height: 200px;
+    }
+}
+
+#poto5:hover {
+    animation: a 2s infinite alternate;
+}
+
+/* צרו דיב שהרוחב שלו גדל מ 30 פיקסל ל100 פיקסל במשך 5 שניות */
+@keyframes b {
+    from {
+        background-color: aqua;
+        width: 30px;
+
+    }
+
+    to {
+        background-color: blue;
+        width: 100px;
+
+    }
+}
+
+#div7 {
+    animation: b 5s infinite alternate;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+}
+
+/* צרו דיב שהרוחב שלו גדל מ 10 פיקסל ל 70 פיקסל, ואז קטן ל30 פיקסל וגדל ל 200 פיקסל במשך 5 שניות */
+@keyframes c {
+    0% {
+        background-color: blue;
+        width: 10px;
+    }
+
+    50% {
+        background-color: green;
+        width: 70px;
+    }
+
+    75% {
+        background-color: yellow;
+        width: 30px;
+    }
+
+    100% {
+        background-color: red;
+        width: 200px;
+    }
+}
+
+#div8 {
+    animation: c 5s infinite alternate;
+    background-color: darkseagreen;
+    width: 100px;
+    height: 100px;
+}
+
+/* צרו תמונה שמשנה בהירות מחשוכה לגמרי לבהירות נורמלית במשך 5 שניות */
+@keyframes d {
+    from {
+        filter: brightness(0%);
+    }
+
+    to {
+        filter: brightness(100%);
+    }
+}
+
+#poto6 {
+    animation: d 5s infinite alternate;
+    width: 100px;
+    height: 100px;
+}
+
+/* צרו תמונה שגדלה במשך 5 שניות */
+@keyframes e {
+    from {
+        width: 100px;
+        height: 100px;
+    }
+
+    to {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+#poto7 {
+    animation: e 5s infinite alternate;
+}
+
+/* צרו אפקט של תמונה שמתחדדת והוכת מישנה לחדשה */
+@keyframes f {
+    from {
+        filter: blur(3px);
+        filter: grayscale(0%);
+    }
+
+    to {
+        filter: blur(0px);
+        filter: grayscale(100%);
+    }
+}
+
+#poto8 {
+    animation: f 5s infinite alternate;
+    width: 100px;
+    height: 100px;
+}
+
+/* צרו דיב שגדל וזז מימין לשמאל ובחזרה */
+@keyframes g {
+    0% {
+        background: orange;
+        left: 0px;
+        height: 100px;
+        width: 100px;
+    }
+
+    100% {
+        background: pink;
+        left: 200px;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+#div9 {
+    animation: g 2s infinite alternate;
+    background-color: black;
+    position: relative;
+}
+
+/* צרו דיב עגול שקטן, גדל קטן וגדל, וזז מלמטה למעלהה ובחזרה/ */
+@keyframes n {
+    from {
+        top: 0px;
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+    }
+
+    to {
+        top: 200px;
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+#div10 {
+    border-radius: 100%;
+    animation: n 5s infinite alternate;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
